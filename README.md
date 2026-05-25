@@ -10,9 +10,8 @@ Sigam as instruções abaixo para a realização das atividades:
 
 A pasta `docs` contém arquivos no formato markdown (igual a este) para consulta, e eles estão divididos em tópicos:
 
-- `tags`: Referência das várias tags html básicas, falando sobre suas funções e quais atributos principais de cada uma. Há uma comparação com o equivalente nas tags html comuns.
-- `componentes`: Referência dos componentes já disponibilizados pelo React Native. Fala sobre as funções de cada um e atributos principais. Se houver um componente que faça o mesmo que uma tag em particular, dê preferência a usar o componente.
-- `react`: Referência para como funciona o React e o React Native, explicando a lógica, sintaxe e funcionalidades principais.
+- `tags`: Referência das várias tags html básicas, falando sobre suas funções e quais atributos principais de cada uma.
+- `componentes`: Referência de como funcionam componentes do React.
 
 ## Formato da atividade
 
