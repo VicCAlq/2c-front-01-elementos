@@ -18,7 +18,7 @@ const estilo = {
 
     divEsquerda: {
         backgroundColor: 'red',
-        with: '30%'
+        width: '30%'
     },
 
     divDireita: {
