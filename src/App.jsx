@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import Divisoria from './components/Divisoria';
-import Paragrafo from './components/Paragrafo';
-import Botao from './components/Botao';
+import Divisoria from './components/AtvDivisoria';
+import Botao from './components/AtvBotaoAcaoInterna';
+import Paragrafo from './components/AtvParagrafo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <section id="center">
-        <Divisoria>
-          <Paragrafo conteudo="Sou um exemplo"/>
+        <Divisoria largura = "30">
+          <Paragrafo t = "oi" c = "tudo bem"></Paragrafo>
           <Botao/>
         </Divisoria>
       </section>
