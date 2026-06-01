@@ -1,18 +1,26 @@
 import root from '../styles/main';
 
-const estilo = {
-  div: {
-    display: "flex",
-    flexDirection: "column",
-    borderRadius: "10px",
-    padding: root.spacings.paddingG,
-    backgroundColor: root.colors.foreground,
-    gap: root.spacings.gap,
-  },
-}
 
-export default function Divisoria({children})  {
-  return(<div style={estilo.div}>
-    {children}
-  </div>)
+
+export default function Divisoria({largura})  {
+
+  const larguraEsquerda = `${largura}%`
+  const larguraDireita = `${100-largura}%`
+
+  const estilo = {
+    esquerda: {
+      width: larguraEsquerda,
+      backgroundColor: "blue"
+    }, 
+    direita: {
+      width: larguraDireita,
+      backgroundColor: "green"
+    }, 
+  }
+
+  return(<>
+    <div style={estilo.esquerda}>
+    </div>
+  </>
+  )
 }

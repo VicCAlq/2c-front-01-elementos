@@ -3,6 +3,7 @@ import './App.css'
 import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
+import AtvParagrafo from './components/AtvParagrafo';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,9 +12,7 @@ function App() {
     <>
       <section id="center">
         <Divisoria>
-          <Paragrafo titulo="Grandão">
-            Pequenininho
-          </Paragrafo>
+          <AtvParagrafo titulo="Grandão" conteudo="Pequenininho"/>
           <Botao/>
         </Divisoria>
       </section>
