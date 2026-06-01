@@ -12,6 +12,7 @@ function App() {
       <section id="center">
         <Divisoria>
           <Paragrafo conteudo="Sou um exemplo"/>
+          <AtvParagrafo titulo={"sim"} conteudo={"nao"}/>
           <Botao/>
         </Divisoria>
       </section>
