@@ -1,10 +1,71 @@
-/*
-[ATIVIDADE DIVISÓRIA]
+import { motion } from 'framer-motion';
 
-Crie e exporte por padrão um componente chamado "AtvDivisoria" que recebe um argumento "largura", cujo valor pode ser entre 10 e 90. O componente deve exibir uma <div> que ocupe 90% da largura da tela visível (use a propriedade "width" com o valor "90vw" para isso), e dentro desta <div> devem ter duas outras <div> exibidas lado a lado. A <div> da esquerda deve ocupar uma percentagem da <div> inicial, essa percentagem é determinada pelo argumento "largura". A <div> da direita deve ocupar a largura restante da <div> inicial. Exemplo:
+export default function AtvDivisoria({ largura }) {
+  const percentLeft = Math.max(10, Math.min(90, Number(largura) || 50));
+  const percentRight = 100 - percentLeft;
 
-argumento largura = 30
-<div> inicial = 90% da largura da tela
-<div> esquerda = 30% da largura da div inicial (30% de 90% da largura da tela)
-<div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
-*/
+  const containerStyle = {
+    display: 'flex',
+    width: '90vw',
+    maxWidth: '100%',
+    height: '56px',
+    borderRadius: '28px',
+    overflow: 'hidden',
+    border: '1px solid var(--border)',
+    boxShadow: 'var(--shadow)',
+    margin: '16px auto',
+    background: 'var(--code-bg)',
+    boxSizing: 'border-box',
+  };
+
+  const leftStyle = {
+    height: '100%',
+    background: 'linear-gradient(135deg, var(--accent) 0%, #aa3bff 50%, #8b2fd9 100%)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#fff',
+    fontSize: '15px',
+    fontWeight: '600',
+    letterSpacing: '0.5px',
+    boxShadow: 'inset -5px 0 15px rgba(0, 0, 0, 0.15)',
+  };
+
+  const rightStyle = {
+    height: '100%',
+    background: 'transparent',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: 'var(--text)',
+    fontSize: '15px',
+    fontWeight: '600',
+    letterSpacing: '0.5px',
+  };
+
+  return (
+    <motion.div 
+      style={containerStyle}
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div 
+        style={leftStyle}
+        initial={{ width: '0%' }}
+        animate={{ width: `${percentLeft}%` }}
+        transition={{ type: 'spring', stiffness: 60, damping: 15 }}
+      >
+        <span>{percentLeft}%</span>
+      </motion.div>
+      <motion.div 
+        style={rightStyle}
+        initial={{ width: '100%' }}
+        animate={{ width: `${percentRight}%` }}
+        transition={{ type: 'spring', stiffness: 60, damping: 15 }}
+      >
+        <span>{percentRight}%</span>
+      </motion.div>
+    </motion.div>
+  );
+}
