@@ -15,7 +15,10 @@ const estilo = {
 export default function Botao({})  {
   return(<div>
     <button style={estilo.botao} onClick={() => console.log("Pressionado")}>
-      <p style={estilo.texto}>Pode clicar!</p>
+      <p style={estilo.texto}>vai te lasca</p>
+    </button>
+    <button style={estilo.botao} onClick={() => alert("endoidou")}>
+      <p style={estilo.texto}>e o caba vai endoidar é?</p>
     </button>
   </div>)
 }
