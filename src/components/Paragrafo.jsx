@@ -5,6 +5,7 @@ const estilo = {
     color: root.colors.texto,
     fontSize: "16px",
   }
+
 }
 
 export default function Paragrafo({conteudo})  {
