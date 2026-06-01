@@ -4,19 +4,14 @@ import Divisoria from './components/Divisoria';
 import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
 import AtvParagrafo from './components/AtvParagrafo';
+import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
-        <Divisoria>
-          <AtvParagrafo />
-          <Paragrafo conteudo="Sou um exemplo"/>
-          <Botao/>
-        </Divisoria>
-      </section>
+        <AtvParagrafo  titulo = "ManoCoxas" conteudo="Site da atividade de ManoCoxas (João Guilherme nas horas vagas)"/>
+        <AtvBotaoAcaoExterna/>
     </>
   )
 }

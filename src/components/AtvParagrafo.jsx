@@ -9,20 +9,18 @@ Crie e exporte por padrão um componente chamado "AtvParagrafo"que recebe dois a
 */
 const fabuloso = {
     titulo: {
-        color: blue,
-        fontSize: "16px"
+        color: "white"
     },
     conteudo: {
-        color: red,
-        fontSize: "16px"
+        color: "white"
     }
 }
 export default function AtvParagrafo({titulo, conteudo}) {
     return(
         <>
-        <h1 style={fabuloso.titulo}>{titulo} aaaa</h1>
-         <p style={fabuloso.conteudo}>dahfaqiousdfhafb</p>
-         </>    
+            <h1 style={fabuloso.titulo}>{titulo}</h1>
+            <p style={fabuloso.conteudo}>{conteudo}</p>
+        </>    
     )
    
 }
