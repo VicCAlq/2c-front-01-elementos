@@ -11,7 +11,9 @@ function App() {
     <>
       <section id="center">
         <Divisoria>
-          <Paragrafo conteudo="Sou um exemplo"/>
+          <Paragrafo titulo="Grandão">
+            Pequenininho
+          </Paragrafo>
           <Botao/>
         </Divisoria>
       </section>
