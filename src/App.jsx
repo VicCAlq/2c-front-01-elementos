@@ -8,6 +8,10 @@ import AtvDivisoria from './components/AtvDivisoria';
 import AtvBotaoAcaoInterna from './components/AtvBotaoAcaoInterna';
 import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna';
 
+function comando(){
+  alert('Vamos lá?');
+}
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -20,7 +24,7 @@ function App() {
           <Botao/>
           <AtvDivisoria largura = '30'/>
           <AtvBotaoAcaoInterna/>
-          <AtvBotaoAcaoExterna/>
+          <AtvBotaoAcaoExterna comando={comando}/>
         </Divisoria>
       </section>
     </>
