@@ -6,6 +6,7 @@ import Botao from './components/Botao';
 import AtvBotaoAcaoInterna from './components/AtvBotaoAcaoInterna';
 import AtvParagrafo from './components/AtvParagrafo';
 import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna';
+import AtvDivisoria from './components/AtvDivisoria';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
           <AtvBotaoAcaoInterna/>
           <AtvParagrafo/>
           <AtvBotaoAcaoExterna/>
+          <AtvDivisoria/>
         </Divisoria>
       </section>
     </>
