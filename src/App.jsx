@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import Divisoria from './components/Divisoria';
-import Paragrafo from './components/Paragrafo';
-import Botao from './components/Botao';
-import AtvParagrafo from './components/AtvParagrafo';
-import AtvBotaoAcaoExterna from './components/AtvBotaoAcaoExterna'
+import Divisoria from './components/AtvDivisoria';
+import Paragrafo from './components/AtvParagrafo';
+import Botao from './components/AtvBotaoAcaoInterna';
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-        <AtvParagrafo  titulo = "ManoCoxas" conteudo="Site da atividade de ManoCoxas (João Guilherme nas horas vagas)"/>
-        <AtvBotaoAcaoExterna/>
+      <section id="center">
+        <Divisoria largura = "65">
+          <Paragrafo titulo= "Receba a benção de ManoCoxas" conteudo="Amém"></Paragrafo>
+          <Botao/>
+        </Divisoria>
+      </section>
     </>
   )
 }

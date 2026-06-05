@@ -5,19 +5,16 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoExterna" que receb
  Este componente deve exibir uma <div> com dois elementos: um <p> com o texto "Clique abaixo",
   e um <button> com o texto "Clique aqui" que ao ser pressionado executa a função recebida no argumento "comando".
 */
-  
- const estilo = {
-  botao: {
-    borderRadius: "5px"
-  },
-  texto: {
-    color: "white"
-  }
+
+const fabuloso = {
+ 
 }
-export default function AtvBotaoAcaoExterna() {
-  return(<div>
-    <button style={estilo.botao} onClick={() => console.log("Pressionado")}>
-      <p style={estilo.texto}>Pode clicar!</p>
-    </button>
-  </div>)
+
+export default function AtvBotaoAcaoExterna({comando})  {
+  return(
+    <div>
+      <p>Clique abaixo</p>
+      <button onClick={comando}>Clique aqui</button>
+    </div>
+  )
 }
