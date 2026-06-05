@@ -24,5 +24,5 @@ export default function AtvParagrafo({conteudo, titulo})  {
     <h1 style={estilo.titulo}>{titulo}</h1> 
     <p style={estilo.texto}>{conteudo}</p> 
     </>
-  )
+  );
 }
