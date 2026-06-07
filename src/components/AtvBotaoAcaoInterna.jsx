@@ -5,8 +5,8 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoInterna" que não 
 */
 
 export default function AtvBotaoAcaoInterna({}) {
-    <div>
-        <p>Clique abaixo</p>
-        <button>Clique aqui</button>
-    </div>
+        <div>
+            <p>Clique abaixo</p>
+            <button onClick={() => window.alert("Fui clicado!")}>Clique aqui</button>
+        </div>
 }

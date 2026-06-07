@@ -6,5 +6,13 @@ Crie e exporte por padrão um componente chamado "AtvDivisoria" que recebe um ar
 argumento largura = 30
 <div> inicial = 90% da largura da tela
 <div> esquerda = 30% da largura da div inicial (30% de 90% da largura da tela)
-<div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
+<div> direita = 70% da largura da div inicial (70% de 90% da largura da tela)
 */
+
+export default function AtvDivisoria({Largura, min = 10, max = 90}) {
+    <div style={{ width: '90vw' }}>
+        <div style={{ width: `${Largura}%` }}></div>
+        <div style={{ width: `${100 - Largura}%` }}></div>
+    </div>
+}
+
