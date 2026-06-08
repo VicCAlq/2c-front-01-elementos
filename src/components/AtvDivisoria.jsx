@@ -8,3 +8,9 @@ argumento largura = 30
 <div> esquerda = 30% da largura da div inicial (30% de 90% da largura da tela)
 <div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
 */
+export default function AtvDivisoria({largura}) {
+    <div style={{ width: '90vw' }}>
+        <div style={{ width: `${largura}%` }}></div>
+        <div style={{ width: `${100 - largura}%` }}></div>
+    </div>
+}
