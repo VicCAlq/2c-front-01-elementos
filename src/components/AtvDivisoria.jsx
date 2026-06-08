@@ -8,12 +8,25 @@ argumento largura = 30
 <div> esquerda = 30% da largura da div inicial (30% de 90% da largura da tela)
 <div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
 */
-export default function AtvDivisoria ({largura}) {
-    return (
-           <div style={{ width: "90vw", display: "flex" }}>
-            <div style={{ width: largura + "%" }}></div>
+export default function AtvDivisoria({largura}) {
+const estilo = {
+    inicial: {
+        width: "90vw"
+    },
+    esquerda:{
+        width: toString(largura) + "vw"
+    },
+    direita: {
+        width: toString(100-largura) + "vw"
+    }
+}
 
-            <div style={{ width: (100 - largura) + "%" }}></div>
-           </div>
-    )
+  return(
+  <>
+      <div style={estilo.inicial}>
+        <div style={estilo.esquerda}></div>
+        <div style={estilo.direita}></div>
+      </div>
+  </>
+  )
 }

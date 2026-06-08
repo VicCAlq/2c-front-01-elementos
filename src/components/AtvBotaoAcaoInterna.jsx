@@ -3,17 +3,22 @@
 
 Crie e exporte por padrão um componente chamado "AtvBotaoAcaoInterna" que não recebe nenhum argumento. Este componente deve exibir uma <div> com dois elementos: um <p> com o texto "Clique abaixo", e um <button> com o texto "Clique aqui" que ao ser clicado exibe um alerta com o texto "Fui clicado!"
 */
-export default function AtvBotaoAcaoInterna ({}) {
-    return (
+const estilo = {
+  botao: {
+    borderRadius: "8px",
+    padding: root.spacings.paddingM,
+    backgroundColor: root.colors.primaria,
+  },
+  texto: {
+    color: root.colors.texto,
+    fontSize: "18px",
+  }
+}
 
-        <div>
-        <p>Clique abaixo</p>
-        <button
-        style={{
-            color: "Black",
-            borderRadius: "50px"
-        }}
-        onClick={ () => alert ("Fui clicado")}>Clique aqui</button>
-        </div>
-    )
+export default function AtvBotaoAcaoInterna () {    
+return(
+  <div>
+    <p>Clique abaixo</p>
+    <button style={estilo.botao} onClick={() => console.log("Fui clicado!")}>Clique aqui</button>
+  </div>)
 }
