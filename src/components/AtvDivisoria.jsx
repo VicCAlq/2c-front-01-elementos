@@ -8,3 +8,38 @@ argumento largura = 30
 <div> esquerda = 30% da largura da div inicial (30% de 90% da largura da tela)
 <div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
 */
+import root from '../styles/main';
+
+const estilo = (largura) => ({
+    div: {
+        backgroundColor: root.colors.background,
+        borderRadius: '15px',
+        display: 'flex',
+        width: '90vw',
+        height: '100px'
+    },
+
+    divEsquerda: {
+        backgroundColor: 'white',
+        width: `${largura}%`
+    },
+    divDireita: {
+        backgroundColor: root.colors.primariaEscura,
+        width: `${100 - largura}%`
+    }
+}) 
+ 
+export default function AtvDivisoria({largura}){
+
+    const styles = estilo(largura);
+
+    return (<>
+    <div style={estilo(largura).div}>
+
+        <div style={estilo(largura).divEsquerda}></div>
+        
+        <div style={estilo(largura).divDireita}></div>
+
+    </div>
+    </>)
+}

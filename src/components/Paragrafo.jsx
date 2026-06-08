@@ -3,7 +3,7 @@ import root from '../styles/main';
 const estilo = {
   texto: {
     color: root.colors.texto,
-    fontSize: "16px",
+    fontSize: "19px",
   }
 }
 
