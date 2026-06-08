@@ -13,17 +13,22 @@ import root from '../styles/main';
 
 const estilo = (largura) => ({
     principal: {
-      width: "90vw",
-      display: "flex"
+      width: "95vw",
+      height: "150px",
+      backgroundColor: "purple",
+      display: "flex",
+      flexDirection: "row",
     },
 
    esquerda: {
         width: `${largura}%`,
+        height: "100px",
         backgroundColor: "blue"
     },
 
     direita: {
       width: `${100 - largura}%`,
+      height: "100px",
       backgroundColor: "green"
     }, 
 
@@ -35,11 +40,10 @@ export default function AtvDivisoria({largura})  {
 
   return(
   <>
-    <div style={estilo(largura).principal}></div>
-
-    <div style={estilo(largura).direita}></div>
-
-    <div style={estilo(largura).esquerda}></div>
+    <div style={styles.principal}>
+      <div style={styles.esquerda}></div>
+      <div style={styles.direita}></div>
+    </div>
   </>
   )
 }

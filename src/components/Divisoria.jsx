@@ -1,25 +1,21 @@
 import root from '../styles/main';
 
-
-
-export default function Divisoria({largura})  {
-
-  const larguraEsquerda = `${largura}%`
-  const larguraDireita = `${100-largura}%`
+export default function Divisoria({children})  {
 
   const estilo = {
     esquerda: {
-      width: larguraEsquerda,
-      backgroundColor: "blue"
+      width: "100%",
+      backgroundColor: "#333333"
     }, 
     direita: {
-      width: larguraDireita,
+      width: "100%",
       backgroundColor: "green"
     }, 
   }
 
   return(<>
     <div style={estilo.esquerda}>
+      {children}
     </div>
   </>
   )

@@ -5,18 +5,19 @@ import Paragrafo from './components/Paragrafo';
 import Botao from './components/Botao';
 import AtvParagrafo from './components/AtvParagrafo';
 import AtvDivisoria from './components/AtvDivisoria';
+import AtvBotaoAcaoInterna from './components/AtvBotaoAcaoInterna';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
+      <section>
+        
         <Divisoria>
-          <AtvDivisoria largura="30px"/>
+          <AtvDivisoria largura={30}/>
           <AtvParagrafo titulo="Grandão" conteudo="Pequenininho"/>
-          <Paragrafo conteudo="Eu sou um exemplo"/>
-          <Botao/>
+          <AtvBotaoAcaoInterna/>
         </Divisoria>
       </section>
     </>
