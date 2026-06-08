@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Divisoria from './components/Divisoria';
-import Paragrafo from './components/Paragrafo';
+import AtvParagrafo from './components/AtvParagrafo';
 import Botao from './components/Botao';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
       <section id="center">
         <Divisoria>
-          <Paragrafo conteudo="Sou um exemplo"/>
+          <AtvParagrafo conteudo="ninguem liga"/>
           <Botao/>
         </Divisoria>
       </section>

@@ -1,21 +1,26 @@
-import root from '../styles/main';
-
 const estilo = {
   botao: {
     borderRadius: "5px",
-    padding: root.spacings.paddingM,
-    backgroundColor: root.colors.primaria,
+    padding: "8px 16px",
+    backgroundColor: "#6200EE",
   },
   texto: {
-    color: root.colors.texto,
+    color: "#333333",
     fontSize: "16px",
   }
-}
+};
 
-export default function Botao({})  {
-  return(<div>
-    <button style={estilo.botao} onClick={() => console.log("Pressionado")}>
-      <p style={estilo.texto}>Pode clicar!</p>
+export default function Botao({ texto = "Pode clicar!", onClick }) {
+  function handleClick() {
+    if (onClick) {
+      onClick();
+    }
+    alert("AIAIUIUI");
+  }
+
+  return (
+    <button style={estilo.botao} onClick={handleClick}>
+      <span style={estilo.texto}>{texto}</span>
     </button>
-  </div>)
+  );
 }
