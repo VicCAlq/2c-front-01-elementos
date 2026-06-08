@@ -11,35 +11,40 @@ argumento largura = 30
 
 import root from '../styles/main';
 
+const estilo = (largura) => ({
+  
+    principal: {
+      width: "95vw",
+      height: "150px",
+      backgroundColor: "purple",
+      display: "flex",
+      flexDirection: "row",
+    },
 
+   esquerda: {
+        width: `${largura}%`,
+        height: "100px",
+        backgroundColor: "blue"
+    },
+
+    direita: {
+      width: `${100 - largura}%`,
+      height: "100px",
+      backgroundColor: "green"
+    }, 
+
+  })
 
 export default function AtvDivisoria({largura})  {
 
-  const larguraEsquerda = Math.min(90, Math.max(10, largura))
-  const larguraDireita = `${100-larguraEsquerda}%`
+  const styles = estilo(largura)
 
-  const estilo = {
-
-    principal: {
-      width: "90vw",
-      display: "flex"
-    },
-   esquerda: {
-        width: `${larguraEsquerda}%`,
-        backgroundColor: "blue"
-    },
-    direita: {
-      width: larguraDireita,
-      backgroundColor: "green"
-    }, 
-  }
-
-  return(<>
-    <div style={estilo.principal}></div>
-
-    <div style={estilo.direita}></div>
-
-    <div style={estilo.esquerda}></div>
+  return(
+  <>
+    <div style={styles.principal}>
+      <div style={styles.esquerda}></div>
+      <div style={styles.direita}></div>
+    </div>
   </>
   )
 }
