@@ -5,26 +5,27 @@ Crie e exporte por padrão um componente chamado "AtvParagrafo" que recebe dois 
 */
 
 const estilo = {
-  texto: {
-    color: root.colors.texto,
-    fontSize: "16px",
+    titulo: {
+      fontSize: "32px",
+      color: "pink",
+    },
+    conteudo:{
+      fontSize:"16px",
+      color: "pink"
+    }
   }
 
-}
 
 
 
 
-
-export default function Paragrafo({conteudo})  {
+export default function AtvParagrafo({titulo, conteudo}) {
   return(
   <>
-    
-
-        <p style={estilo.texto}>{conteudo}</p>    
-    <h1> Titulo maior </h1>
-    
-    </>
-    
+      <div>
+        <h1 style={estilo.titulo}>título</h1>
+        <p style={estilo.conteudo}>conteudo</p>
+      </div>
+  </>
   )
 }
