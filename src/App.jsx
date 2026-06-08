@@ -12,10 +12,12 @@ function App() {
   return (
     <>
       <section id="center">
-        <AtvDivisoria>
+        <Divisoria>
+          <AtvDivisoria largura="30px"/>
           <AtvParagrafo titulo="Grandão" conteudo="Pequenininho"/>
+          <Paragrafo conteudo="Eu sou um exemplo"/>
           <Botao/>
-        </AtvDivisoria>
+        </Divisoria>
       </section>
     </>
   )
