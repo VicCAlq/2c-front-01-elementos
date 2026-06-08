@@ -7,7 +7,7 @@ Crie e exporte por padrão um componente chamado "AtvParagrafo" que recebe dois 
 const estilo = {
     titulo: {
       fontSize: "32px",
-      color: "pink",
+      color: "white",
     },
     conteudo:{
       fontSize:"16px",
