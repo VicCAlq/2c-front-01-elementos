@@ -15,8 +15,8 @@ import root from '../styles/main';
 
 export default function AtvDivisoria({largura})  {
 
-  const larguraEsquerda = Math.min(90, Math.max(10, largura))
-  const larguraDireita = `${100-larguraEsquerda}%`
+  const larguraEsquerda = `${Math.min(90, Math.max(10, largura))}%`
+  const larguraDireita = `${100 - larguraEsquerda}%`
 
   const estilo = {
 
@@ -25,7 +25,7 @@ export default function AtvDivisoria({largura})  {
       display: "flex"
     },
    esquerda: {
-        width: `${larguraEsquerda}%`,
+        width: larguraEsquerda,
         backgroundColor: "blue"
     },
     direita: {
