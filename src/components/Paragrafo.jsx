@@ -1,15 +1,19 @@
 import root from '../styles/main';
 
 const estilo = {
-  texto: {
-    color: root.colors.texto,
-    fontSize: "16px",
-  }
-}
+  div: {
+      display: "flex",
+          flexDirection: "column",
+              borderRadius: "10px",
+                  padding: root.spacings.paddingG,
+                      backgroundColor: root.colors.foreground,
+                          gap: root.spacings.gap,
+                            },
+                            }
 
-export default function Paragrafo({conteudo})  {
-  return(
-    <p style={estilo.texto}>{conteudo}</p>
-  )
-}
+                            export default function Divisoria({children})  {
+                              return(<div style={estilo.div}>
+                                  {children}
+                                    </div>)
+                                    }
 
