@@ -14,7 +14,8 @@ argumento largura = 30
 */
 
 const estilo = {
-    div: {
+    divGrande: {
+        width: "90vw",
         display: "flex",
         flexDirection: "column",
         borderRadius: "10px",
@@ -22,15 +23,26 @@ const estilo = {
         backgroundColor: root.colors.foreground,
         gap: root.spacings.gap,
     },
+    divPequena1: {
+        height: "100px",
+        backgroundColor: root.colors.primaria
+    },
+    divPequena2: {
+        width: "1fr",
+        height: "100px",
+        backgroundColor: root.colors.secundaria
+    }
 }
 
 export default function AtvDivisoria({ largura }) {
-    return (
-        <div style={{ width: "90vw" }}>
-            <div style={{ width: `${largura}` }}>
+    estilo.divPequena1.width = `${largura}%`
 
+    return (
+        <div style={ estilo.divGrande }>
+            <div style={ estilo.divPequena1 }>
+                
             </div>
-            <div style={{ width: "1fr" }}>
+            <div style={ estilo.divPequena2 }>
 
             </div>
         </div>

@@ -9,16 +9,21 @@ O texto do "titulo" deve ficar acima do texto do "conteudo".
 */
 
 const estilo = {
+    titulo: {
+        fontSize: "32px",
+        color: root.colors.foreground
+    },
     texto: {
         color: root.colors.texto,
         fontSize: "16px",
     }
 }
 
-export default function AtvParagrafo({ titulo, conteudo }) {
+export default function AtvParagrafo({ children, titulo }) {
     return (
         <div>
-            
+            <h1>{ titulo }</h1>
+            <p>{ children }</p>
         </div>
     )
 }
