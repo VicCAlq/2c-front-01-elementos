@@ -1,0 +1,26 @@
+Data de atualização: Dia 25/8/2026 às 16:53 
+
+| Questão | Teste | Entregue | Correto | Mensagem de Erro |
+|---------|-------|----------|---------|------------------|
+| AtvBotaoAcaoExterna Component | deve exibir um p com o texto "Clique abaixo" | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvBotaoAcaoExterna Component | deve exibir um button com o texto "Clique aqui" | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvBotaoAcaoExterna Component | deve executar a função comando ao clicar no botão | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvBotaoAcaoInterna Component | deve exibir um p com o texto "Clique abaixo" | ✅ | ✅ | Sem erros |
+| AtvBotaoAcaoInterna Component | deve exibir um button com o texto "Clique aqui" | ✅ | ✅ | Sem erros |
+| AtvBotaoAcaoInterna Component | deve exibir um p e um button dentro de uma div | ✅ | ✅ | Sem erros |
+| AtvBotaoAcaoInterna Component | deve exibir um alerta com o texto "Fui clicado!" ao clicar no botão | ✅ | ❌ | AssertionError: expected "bound " to be called 1 times, but got 0 times |
+| AtvDivisoria Component | deve renderizar a div principal com 90vw de largura | ✅ | ✅ | Sem erros |
+| AtvDivisoria Component | deve renderizar duas divs internas lado a lado | ✅ | ❌ | AssertionError: expected  to have a length of 2 but got +0 |
+| AtvDivisoria Component | deve definir a largura correta para a div esquerda quando largura = 30 | ✅ | ❌ | Error: [2mexpect([22m[31mreceived[39m[2m).toHaveStyle()[22m |
+| AtvDivisoria Component | deve definir a largura correta para a div esquerda quando largura = 10 | ✅ | ❌ | Error: [2mexpect([22m[31mreceived[39m[2m).toHaveStyle()[22m |
+| AtvDivisoria Component | deve definir a largura correta para a div esquerda quando largura = 90 | ✅ | ❌ | Error: [2mexpect([22m[31mreceived[39m[2m).toHaveStyle()[22m |
+| AtvDivisoria Component | deve retornar null quando a largura for menor que 10 | ✅ | ❌ | Error: [2mexpect([22m[31melement[39m[2m).toBeEmptyDOMElement()[22m |
+| AtvDivisoria Component | deve retornar null quando a largura for maior que 90 | ✅ | ❌ | Error: [2mexpect([22m[31melement[39m[2m).toBeEmptyDOMElement()[22m |
+| AtvDivisoria Component | deve retornar null quando a largura não for um número | ✅ | ❌ | Error: [2mexpect([22m[31melement[39m[2m).toBeEmptyDOMElement()[22m |
+| AtvDivisoria Component | deve retornar null quando a largura for undefined | ✅ | ❌ | Error: [2mexpect([22m[31melement[39m[2m).toBeEmptyDOMElement()[22m |
+| AtvDivisoria Component | deve manter a proporção correta para diferentes valores de largura | ✅ | ❌ | Error: [2mexpect([22m[31mreceived[39m[2m).toHaveStyle()[22m |
+| AtvParagrafo | Renderiza uma div com um h1 e um p dentro de si | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvParagrafo | deve renderizar o título como h1 com tamanho de fonte 32px | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvParagrafo | deve renderizar o título com o conteúdo "Título teste" | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvParagrafo | deve renderizar o conteúdo como P com tamanho de fonte 16px | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
+| AtvParagrafo | deve renderizar o conteúdo com o conteúdo "Título teste" | ✅ | ❌ | Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. |
