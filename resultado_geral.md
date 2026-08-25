@@ -1,0 +1,49 @@
+Data de atualização: Dia 25/8/2026 às 16:55 
+
+| Aluno | Qtd. questões acertadas (de 3) | Nota total |
+|-------|---------------------------------|------------|
+| Abner Ferreira (abner-ferreira-nave) | 0 | 0.00 |
+| Amanda Vitória (amanda-vitoria-nave) | 0 | 26.67 |
+| Andrey Vieira (itzisnotavaliable) | 3 | 100.00 |
+| Arthur Emanuel (arthur-emanuel-nave) | 2 | 93.78 |
+| Arthur Lucio (arthur-lucio-nave) | 0 | 0.00 |
+| Artur Coelho (ArturJude) | 3 | 100.00 |
+| Beatriz Vilaça (beatriz-vilaca-nave) | 0 | 0.00 |
+| Bernardo Pedro (Bernardo-Pedro-Nave) | 2 | 93.78 |
+| Brenda Vilaça (brenda-vilaca-nave) | 0 | 0.00 |
+| Brennda Rykelly (brennda-rykelly-nave) | 0 | 0.00 |
+| Bruno Gustavo (buenots) | 3 | 100.00 |
+| Caique Albuquerque (caique-albuquerque-nave) | 1 | 53.33 |
+| Cauê Ferreira (caue-ferreira-nave) | 2 | 80.00 |
+| Davi Barboza (DaviBarboza98) | 3 | 100.00 |
+| Davi Neres (davi-neres-nave) | 3 | 100.00 |
+| Debora Vitória (debora-vitoria-nave) | 0 | 0.00 |
+| Eduardo Oliveira (dudu-015) | 0 | 26.67 |
+| Fernandes Gabriel (fernandes-gabriel-nave) | 0 | 0.00 |
+| Gabriel Fernando (gabriel-fernando-nave) | 2 | 93.78 |
+| Gabriel Primo (priimooo1) | 0 | 0.00 |
+| Gabriel Vitor (gabriel-vitor-nave) | 0 | 26.67 |
+| Gustavo Alberto (gustavoalberto-create) | 3 | 100.00 |
+| Henrique Samuel (henriquerocha-ops) | 3 | 100.00 |
+| Isaac Andrade (Isaac-Andrade-Santos-NAVE) | 2 | 93.78 |
+| Jeniffer Dantas (jeniffer-dantas-nave) | 2 | 71.56 |
+| João Barros (Joao-Barros-NAVE) | 3 | 100.00 |
+| Jonatas Vinícius (jonatasvinicius67) | 0 | 26.67 |
+| Kamylle Vitória (Kamylle-Vitoria-Nave) | 0 | 26.67 |
+| Letícia Domingos (letletdaluz) | 0 | 26.67 |
+| Luan Murilo (luan-murilo-nave) | 2 | 93.78 |
+| Marcus Vinícios (marcus-vinicios-nave) | 1 | 49.33 |
+| Mateus Antônio (mateusnave) | 2 | 93.78 |
+| Matheus Thiago (teteuzo) | 0 | 0.00 |
+| Miguel Albuquerque (miguelalbuquerque492) | 0 | 0.00 |
+| Pedro Arthur (pedro-arthur-nave) | 0 | 16.00 |
+| Pedro Victor (pedro-victor-nave) | 2 | 80.00 |
+| Renato Marques (Renato-Marques-Nave) | 2 | 70.67 |
+| Ryan Gabriel (Ryan-Nave2026) | 0 | 0.00 |
+| Samuel Erivaldo (samuelerivaldo-png) | 0 | 0.00 |
+| Saulo Bizerril (saulobizerril-nave) | 1 | 37.33 |
+| Thales Henry (thaleshenry-nave) | 1 | 37.33 |
+| Thulio Barbosa (thuliobarbosa-creator) | 2 | 80.00 |
+| Vitor Calixto (Vitor-Calixto-Paixao) | 3 | 100.00 |
+| Walleysson Ferreira (wally1542) | 1 | 58.22 |
+| Yan Arthur (yan-arthur-nave) | 1 | 56.00 |
