@@ -9,30 +9,28 @@ argumento largura = 30
 <div> direita = 70% da largura da div inicial (70% de 90% da largura da  tela)
 */
 export default function AtvDivisoria({ largura }) {
-    const Esquerda = `${largura}%`;
-    const Direita = `${100 - largura}%`;
+  const esquerda = `${largura}%`;
+  const direita = `${100 - largura}%`;
 
-    const style = {
-        container: {
-            backgroundColor: "blue",
-            width: "90vw",
-            display: "flex",
-        },
-        esquerda: {
-            width: Esquerda,
-            backgroundColor: "red",
-        },
-        direita: {
-            width: Direita,
-            backgroundColor: "black",
-        },
-    };
-    
-    return (
-        <div style={style.container}>
-            <p> Teste</p>
-            <div style={style.esquerda}>meu plano benigno esta se concretizandoooooo</div>
-            <div style={style.direita}>plano benigno finalizadooooooooooooo (se voce for japones leia a parte esquerda primeiro)</div>
-        </div>
-    );
+  const style = {
+    container: {
+      width: "90vw",
+      display: "flex"
+    },
+    esquerda: {
+      width: esquerda,
+      backgroundColor: "red"
+    },
+    direita: {
+      width: direita,
+      backgroundColor: "black"
+    }
+  };
+
+  return (
+    <div style={style.container}>
+      <div style={style.esquerda}></div>
+      <div style={style.direita}></div>
+    </div>
+  );
 }
