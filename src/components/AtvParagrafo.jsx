@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 /*
 [ATIVIDADE PARÁGRAFO]
 
@@ -18,11 +16,11 @@ const estilo = {
     }
 };
 
-export default function AtvParagrafo({ t, c }) {
+export default function AtvParagrafo({ titulo, conteudo }) {
   return (
     <div>
-      <h1 style={estilo.titulo}>{t}</h1>
-      <p style={estilo.conteudo}>{c}</p>
+      <h1 style={estilo.titulo}>{titulo}</h1>
+      <p style={estilo.conteudo}>{conteudo}</p>
     </div>
   );
 }

@@ -5,14 +5,11 @@ Crie e exporte por padrão um componente chamado "AtvBotaoAcaoExterna" que receb
 Este componente deve exibir uma <div> com dois elementos: um <p> com o texto "Clique abaixo", e um <button> com o texto "Clique aqui" que ao ser pressionado executa a função recebida no argumento "comando".
 */
 
-const estilo = {
-};
-
 export default function AtvBotaoAcaoExterna({ comando }) {
   return (
     <div>
-        <p>Clique Abaixo</p>
-        <button onclick='comando()'>Clique Aqui</button>
+      <p>Clique abaixo</p>
+      <button type="button" onClick={comando}>Clique aqui</button>
     </div>
   );
 }

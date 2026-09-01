@@ -12,7 +12,7 @@ const estilo = {
   }
 }
 
-export default function Botao({})  {
+export default function Botao()  {
   return(<div>
     <button style={estilo.botao} onClick={() => console.log("Pressionado")}>
       <p style={estilo.texto}>Pode clicar!</p>

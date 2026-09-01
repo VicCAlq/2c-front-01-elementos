@@ -28,25 +28,20 @@ const estilo = {
 };
 
 export default function AtvDivisoria({ largura, children }) {
-  let validacao = largura;
-
-  // <10 = 10, >90 = 90
-  if (validacao < 10) {
-    validacao = 10
-  } else if (validacao > 90) {
-    validacao = 90
+  if (typeof largura !== 'number' || largura < 10 || largura > 90) {
+    return null;
   }
-  const resto = 100 - validacao;
 
-  estilo.esquerda.width = `${validacao}%`
-  estilo.direita.width = `${resto}%`
+  const resto = 100 - largura;
+  const esquerda = { ...estilo.esquerda, width: `${largura}%` };
+  const direita = { ...estilo.direita, width: `${resto}%` };
 
   return (
     <div style={estilo.container}>
-      <div style={ estilo.esquerda }>
+      <div style={esquerda}>
         {children}
       </div>
-      <div style={ estilo.direita }>
+      <div style={direita}>
         {children}
       </div>
     </div>

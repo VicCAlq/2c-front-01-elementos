@@ -1,19 +1,16 @@
-import { useState } from 'react'
 import './App.css'
-import Divisoria from './components/AtvDivisoria';
-import Botao from './components/AtvBotaoAcaoInterna';
-import Paragrafo from './components/AtvParagrafo'
+import AtvDivisoria from './components/AtvDivisoria';
+import AtvBotaoAcaoInterna from './components/AtvBotaoAcaoInterna';
+import AtvParagrafo from './components/AtvParagrafo'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <section id="center">
-        <Divisoria largura = "30">
-          <Paragrafo t = "oi" c = "tudo bem"></Paragrafo>
-          <Botao/>
-        </Divisoria>
+        <AtvDivisoria largura={30}>
+          <AtvParagrafo titulo="oi" conteudo="tudo bem" />
+          <AtvBotaoAcaoInterna />
+        </AtvDivisoria>
       </section>
     </>
   )
