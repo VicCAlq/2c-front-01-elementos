@@ -10,19 +10,19 @@ O <h1> de "titulo" deve ter o tamanho de 32px, e o <p> de "conteudo" deve ter o 
 O texto do "titulo" deve ficar acima do texto do "conteudo".
 */
 const estilo = {
-    titulo: {
-        fontSize: '32px'
-    },
-    conteudo: {
-        fontSize: '16px',
-    }
+  titulo: {
+    fontSize: "32px"
+  },
+  conteudo: {
+    fontSize: "16px"
+  }
 };
 
-export default function AtvParagrafo({ t, c }) {
+export default function AtvParagrafo({ titulo, conteudo }) {
   return (
     <div>
-      <h1 style={estilo.titulo}>{t}</h1>
-      <p style={estilo.conteudo}>{c}</p>
+      <h1 style={estilo.titulo}>{titulo}</h1>
+      <p style={estilo.conteudo}>{conteudo}</p>
     </div>
   );
 }
